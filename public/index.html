@@ -1,0 +1,39 @@
+<!-- Complete Project Details at: https://RandomNerdTutorials.com/ -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ESP Firebase App</title>
+
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+		<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+
+		<!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+		<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+
+		<script>
+			// REPLACE WITH YOUR web app's Firebase configuration
+			const firebaseConfig = {
+				apiKey: 'AIzaSyDCWKOVcceLB-iuc4gMIErYAfGbOxQ7ldc',
+				authDomain: 'esp32-firebase-demo-2d982.firebaseapp.com',
+				databaseURL:
+					'https://esp32-firebase-demo-2d982-default-rtdb.asia-southeast1.firebasedatabase.app',
+				projectId: 'esp32-firebase-demo-2d982',
+				storageBucket: 'esp32-firebase-demo-2d982.appspot.com',
+				messagingSenderId: '1056659554060',
+				appId: '1:1056659554060:web:4fe915cb9efd361ca5d329',
+			};
+			// Initialize Firebase
+			firebase.initializeApp(firebaseConfig);
+			var database = firebase.database();
+		</script>
+		<script src="app.js" defer></script>
+	</head>
+	<body>
+		<h1>ESP32 Firebase Web App Example</h1>
+		<p>Reading int: <span id="reading-int"></span></p>
+		<p>Reading float: <span id="reading-float"></span></p>
+	</body>
+</html>
